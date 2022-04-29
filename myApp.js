@@ -1,39 +1,9 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-console.log("Hello World")
+app.get('/', (req, res) => {
+    res.send('Hello World in console')
+    console.log("Hello World")
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+app.listen(100, ()=>console.log('server is running on port 100'))

@@ -10,6 +10,10 @@
 	},
 	"main": "myApp.js",
 	"scripts": {
-		"start": "node myApp"
+		"start": "node myApp",
+		"dev": "nodemon myApp"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16"
 	}
 }
